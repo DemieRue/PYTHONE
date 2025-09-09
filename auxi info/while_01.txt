@@ -1,0 +1,17 @@
+contador_par=0
+contador_impar=0
+k=0
+N=int(input("cantidad de numeros:"))
+
+while k<N:
+    x=int(input("ingrese numero:"))
+    k=k+1
+    if(x%2==0):
+        contador_par=contador_par+1  #contador_par+=1
+
+    else:
+        contador_impar=contador_impar+1
+
+    
+print("cantidad de pares",contador_par)
+print("cantidad de impares",contador_impar)

@@ -1,0 +1,119 @@
+# ************FOR*****************
+#ejemplo1: vemos que la variable i repite 3 veces
+for i in [1,2,3]:
+    print("Hola")
+
+for i in [1,2,3]:
+    print(i)
+
+##########################################################
+
+#ejemplo2: dentro de la lista vemos 4 palabras la cual imprime "Hola" 4 veces
+for i in ["primavera","verano","otoño","invierno"]:
+    print("Hola")
+
+#colocamos en print la variable i,vemos que al empezar i="invierno",i="verano".....
+for i in ["primavera","verano","otoño","invierno"]:
+    print(i)
+
+#############################################################
+
+#ejemplo3:combinamos nuestra lista 
+for i in ["primavera","Juan",4]:
+    print("Hola")
+
+print(" ")    
+#imprimimos la variable i
+for i in ["primavera","Juan",9]:
+    print(i)
+
+#usamos end=" ",para mostrar horizontalmente 
+for i in ["primavera","Juan",9]:
+    print("Hola",end=" ") #dentro de "_" esta un espacio,para separar Hola
+
+print(" ")
+
+for i in "juanperez@gmail.com":#imprimira separado 
+    print(i,end=" ") 
+
+################################################################
+
+#ejemplo4:
+email=False
+
+for i in "juanperez@gmail.com": 
+    if(i=="@"): #vemos si en nuestra variable i se encuentra un caracter @
+        email=True #cambia la variable email de falso a verdadero
+
+if email==True: #si es verdadero la variable email imprime el mensaje caso contrario pasa a else
+    print("email es correcto")
+
+else:
+    print("el email No es correcto")
+
+###################################################################
+
+#ejemplo5:
+email=input("Introduce tu direccion de email:")
+contador=0
+for i in email: 
+    if(i=="@" or i=="."): #vemos si en nuestra variable i se encuentra un caracter @ or .
+        contador=contador+1 #si ingresa a esta condicion se va incrementando contador
+
+if contador==2:
+    print("email es correcto")
+
+else:
+    print("el email No es correcto")
+
+######################################################################
+
+#ejemplo6: usaremos range
+
+for i in range(5):
+    print("Hola")
+print(" ")
+###############
+for i in range(5):
+    print(f"valor de la variable {i}")
+
+#######################################################################
+
+#ejemplo6: usaremos range
+
+for i in range(5,10): #los numeros a mostrar son 5==>5,6,7,8,9
+    print("Hola")
+print(" ")
+###############
+for i in range(5,10):
+    print(f"valor de la variable {i}")
+
+#########################################################################
+
+#ejemplo7: usaremos range
+
+for i in range(10,50,3): #los numeros a mostrar de 10 al 50 multiplos de 3
+    print("Hola")
+print(" ")
+###############
+for i in range(10,50,3):
+    print(f"valor de la variable {i}")
+
+########################################################################
+
+#ejemplo8: 
+#ingresamos juan en la variable email
+email=input("Introduce tu direccion de email:")
+valido=False
+for i in range(len(email)):#usando len vemos la cantidad de caracteres
+                        #juan tiene 4 caracteres 
+    if email[i]=="@": 
+        valido=True
+
+if valido==True:
+    print("email es correcto")
+
+else:
+    print("el email No es correcto")
+
+########################################################################
