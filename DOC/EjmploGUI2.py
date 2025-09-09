@@ -1,0 +1,10 @@
+from tkinter import *
+raiz=Tk()
+frame1=Frame()
+frame1.pack()
+lb1=Label(frame1,text="Hola a todos")
+lb1.pack()
+lb1.config(bg="yellow")
+lb1.config(font=('Arial',44))
+lb1.config(fg="red")
+raiz.mainloop()
